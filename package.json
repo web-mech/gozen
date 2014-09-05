@@ -1,0 +1,33 @@
+{
+  "name": "gozen",
+  "version": "0.0.1",
+  "description": "Classes for Javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/web-mech/gozen.git"
+  },
+  "keywords": [
+    "classes",
+    "inheritance",
+    "prototype",
+    "class"
+  ],
+  "author": "webmech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web-mech/gozen/issues"
+  },
+  "homepage": "https://github.com/web-mech/gozen",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  }
+}
