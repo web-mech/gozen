@@ -1,7 +1,7 @@
 {
   "name": "gozen",
   "version": "0.0.1",
-  "description": "Classes for Javascript",
+  "description": "Classes for Javascript. Build your js apps like a heroic samurai.",
   "main": "index.js",
   "directories": {
     "test": "test",
