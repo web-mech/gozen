@@ -4,13 +4,12 @@ Gozen
 
 I didn't like how most javascript class systems worked or how they were implemented, so I made Gozen.
 
-
 ######Example 1.
 
 ```
 var Foo = new Class({
   extend: true,
-  __construct: function(options) {
+  init: function(options) {
     this.name = 'foo';
   }
 });
@@ -28,8 +27,8 @@ foo
 ```
 var Bar = new Foo({
   extend: true,
-  __construct: function(options) {
-    this._super.__construct();
+  init: function(options) {
+    this._super.init.call(this, options);
     this.name = this.name + options.name;
   }
 });
@@ -38,7 +37,8 @@ var bar = new Bar({name: ' bar'});
 
 console.log(bar.name);
 ```
+
 ######Out:
 ```
-foo bar
+foobar
 ```
